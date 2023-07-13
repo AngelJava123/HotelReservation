@@ -1,0 +1,298 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\tasheva> cd C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps> git clone https://github.com/AngelJava123/HotelReservation.git
+Cloning into 'HotelReservation'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps> git clone C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests
+fatal: destination path 'Git_Branching_and_Pull_Requests' already exists and is not an empty directory.
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps> cd C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests> git clone https://github.com/AngelJava123/HotelReservation.git
+Cloning into 'HotelReservation'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests> cd C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        solution.js
+        static/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git add .
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git commit -m "Adding files to project"
+[main (root-commit) 21dbb13] Adding files to project
+ Committer: Tashev <angel.tashev@hp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 251 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 solution.js
+ create mode 100644 static/css/styles.css
+ create mode 100644 static/img/budgetRoom.jpg
+ create mode 100644 static/img/familyRoom.jpg
+ create mode 100644 static/img/kingRoom.jpg
+ create mode 100644 static/img/zero.jpg
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 2.56 MiB | 1.17 MiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AngelJava123/HotelReservation.git
+ * [new branch]      main -> main
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git branch search-form
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git checkout search-form
+Switched to branch 'search-form'
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch search-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   solution.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch search-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   solution.js
+        modified:   static/css/styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git add .
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch search-form
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   solution.js
+        modified:   static/css/styles.css
+
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git commit -m "Modified files"
+[search-form bd3a628] Modified files
+ Committer: Tashev <angel.tashev@hp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 139 insertions(+)
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git push
+fatal: The current branch search-form has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin search-form
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git push --set-upstream origin search-form
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.67 KiB | 569.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'search-form' on GitHub by visiting:
+remote:      https://github.com/AngelJava123/HotelReservation/pull/new/search-form
+remote:
+To https://github.com/AngelJava123/HotelReservation.git
+ * [new branch]      search-form -> search-form
+branch 'search-form' set up to track 'origin/search-form'.
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git branch our-offers-form
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git checkout our-offers-form
+Switched to branch 'our-offers-form'
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch our-offers-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch our-offers-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   static/css/styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch our-offers-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   solution.js
+        modified:   static/css/styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git add .
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git commit -a -m "Implemented Our Offers form functionality"
+[our-offers-form f431f3e] Implemented Our Offers form functionality
+ Committer: Tashev <angel.tashev@hp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 112 insertions(+), 1 deletion(-)
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git push --set-upstream origin our-offers-form
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.61 KiB | 1.61 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'our-offers-form' on GitHub by visiting:
+remote:      https://github.com/AngelJava123/HotelReservation/pull/new/our-offers-form
+remote:
+To https://github.com/AngelJava123/HotelReservation.git
+ * [new branch]      our-offers-form -> our-offers-form
+branch 'our-offers-form' set up to track 'origin/our-offers-form'.
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git checkout -b guest-details-form
+Switched to a new branch 'guest-details-form'
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git branch
+* guest-details-form
+  main
+  our-offers-form
+  search-form
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch guest-details-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch guest-details-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   solution.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git add .
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git commit -a -m "Implemented Guest Details form functionality"
+[guest-details-form f9773f1] Implemented Guest Details form functionality
+ Committer: Tashev <angel.tashev@hp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 59 insertions(+), 1 deletion(-)
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git push --set-upstream origin guest-details-form
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.09 KiB | 559.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'guest-details-form' on GitHub by visiting:
+remote:      https://github.com/AngelJava123/HotelReservation/pull/new/guest-details-form
+remote:
+To https://github.com/AngelJava123/HotelReservation.git
+ * [new branch]      guest-details-form -> guest-details-form
+branch 'guest-details-form' set up to track 'origin/guest-details-form'.
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git branch confirm-reservation-form
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git checkout confirm-reservation-form
+Switched to branch 'confirm-reservation-form'
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git status
+On branch confirm-reservation-form
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   solution.js
+        modified:   static/css/styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git add .
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git commit -a -m "Implemented Confirm Reservation form functionality"
+[confirm-reservation-form ba20a6f] Implemented Confirm Reservation form functionality
+ Committer: Tashev <angel.tashev@hp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 50 insertions(+), 1 deletion(-)
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation> git push --set-upstream origin confirm-reservation-form
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.01 KiB | 345.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'confirm-reservation-form' on GitHub by visiting:
+remote:      https://github.com/AngelJava123/HotelReservation/pull/new/confirm-reservation-form
+remote:
+To https://github.com/AngelJava123/HotelReservation.git
+ * [new branch]      confirm-reservation-form -> confirm-reservation-form
+branch 'confirm-reservation-form' set up to track 'origin/confirm-reservation-form'.
+PS C:\Users\tasheva\Downloads\SU\Software_Engineering_and_DevOps\Git_Branching_and_Pull_Requests\HotelReservation>
